@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/tv_alarm_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_blue"
+        android:textSize="40sp"
+        tools:text="12:34" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/sw_alarm_active"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/tv_alarm_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tv_alarm_time"
+        android:padding="4dp"
+        android:textColor="@color/text_blue"
+        android:textSize="16sp"
+        tools:text="Wakeup" />
+
+    <TextView
+        android:id="@+id/tv_alarm_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollHorizontally="false"
+        android:layout_below="@+id/sw_alarm_active"
+        android:layout_toStartOf="@+id/sw_alarm_active"
+        android:maxLength="30"
+        android:padding="4dp"
+        android:textColor="@color/text_blue"
+        android:textSize="16sp"
+        tools:text="Location" />
+
+</RelativeLayout>

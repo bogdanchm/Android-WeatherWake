@@ -1,0 +1,210 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_second"
+    android:orientation="vertical"
+    tools:context="net.mready.weatherwake.ui.activities.AlarmDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:drawableStart="@drawable/ic_nav_save"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp"
+            android:text="Save"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_alarm_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Alarm Name"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/text_white" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sw_alarm_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_alarm_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="54sp"
+                tools:text="12:34" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/btn_day_mon"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_day_toggle"
+                    android:textOff="Mon"
+                    android:textOn="Mon" />
+
+                <ToggleButton
+                    android:id="@+id/btn_day_tue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_day_toggle"
+                    android:textOff="Tue"
+                    android:textOn="Tue" />
+
+                <ToggleButton
+                    android:id="@+id/btn_day_wed"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_day_toggle"
+                    android:textOff="Wed"
+                    android:textOn="Wed" />
+
+                <ToggleButton
+                    android:id="@+id/btn_day_thu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_day_toggle"
+                    android:textOff="Thu"
+                    android:textOn="Thu" />
+
+                <ToggleButton
+                    android:id="@+id/btn_day_fri"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_day_toggle"
+                    android:textOff="Fri"
+                    android:textOn="Fri" />
+
+                <ToggleButton
+                    android:id="@+id/btn_day_sat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_day_toggle"
+                    android:textOff="Sat"
+                    android:textOn="Sat" />
+
+                <ToggleButton
+                    android:id="@+id/btn_day_sun"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_day_toggle"
+                    android:textOff="Sun"
+                    android:textOn="Sun" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Alarm Sound" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rdbtn">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:id="@+id/rd_bn_0"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_on"
+                android:checked="true"
+                android:enabled="false"
+                android:paddingStart="8dp"
+                android:text="Default"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/text_white" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_bn_1"
+                android:button="@drawable/radio_off"
+                android:checked="true"
+                android:enabled="false"
+                android:paddingStart="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Flappy Bird"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/text_white" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_off"
+                android:id="@+id/rd_bn_2"
+                android:checked="true"
+                android:enabled="false"
+                android:layout_marginTop="10dp"
+                android:paddingStart="8dp"
+                android:text="Helium"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/text_white" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_off"
+                android:id="@+id/rd_bn_3"
+                android:checked="true"
+                android:enabled="false"
+                android:paddingStart="8dp"
+                android:text="Delireium"
+                android:layout_marginTop="10dp"
+                android:onClick="onRadioButtonClicked"
+                android:textColor="@color/text_white" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

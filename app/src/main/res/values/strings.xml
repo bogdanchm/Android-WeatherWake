@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">WeatherWake</string>
+    <string name="app_title">Weather<b>Wake</b></string>
+
+    <string name="time" formatted="false"><![CDATA[<b>%02d</b>:%02d]]></string>
+
+    <string-array name="alarm_set">
+        <item>Next alarm in less than 1 minute.</item>
+        <item>Next alarm in <xliff:g example="2 days" id="DAYS">%1$s</xliff:g>.</item>
+        <item>Next alarm in <xliff:g example="2 hours" id="HOURS">%2$s</xliff:g>.</item>
+        <item>Next alarm in <xliff:g example="2 days" id="DAYS">%1$s</xliff:g> and <xliff:g example="2 hours" id="HOURS">%2$s</xliff:g>.</item>
+        <item>Next alarm in <xliff:g example="2 minutes" id="MINUTES">%3$s</xliff:g>.</item>
+        <item>Next alarm in <xliff:g example="2 days" id="DAYS">%1$s</xliff:g> and <xliff:g example="2 minutes" id="MINUTES">%3$s</xliff:g>.</item>
+        <item>Next alarm in <xliff:g example="2 hours" id="HOURS">%2$s</xliff:g> and <xliff:g example="2 minutes" id="MINUTES">%3$s</xliff:g>.</item>
+        <item>Next alarm in <xliff:g example="2 days" id="DAYS">%1$s</xliff:g>, <xliff:g example="2 hours" id="HOURS">%2$s</xliff:g>, and <xliff:g example="2 minutes" id="MINUTES">%3$s</xliff:g>.</item>
+    </string-array>
+
+</resources>

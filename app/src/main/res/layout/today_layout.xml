@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_time_today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="96sp"
+        tools:text="12:34" />
+
+    <TextView
+        android:id="@+id/tv_date_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time_today"
+        android:layout_toStartOf="@+id/separator"
+        android:gravity="end"
+        android:paddingEnd="16dp"
+        android:text="Tue, 20 Nov"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_date_today"
+        android:layout_alignTop="@+id/tv_time"
+        android:layout_centerHorizontal="true"
+        android:background="#66FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_location_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time_today"
+        android:layout_toEndOf="@+id/separator"
+        android:gravity="start"
+        android:paddingStart="16dp"
+        android:textSize="16sp"
+        tools:text="Bucharest" />
+
+    <ImageButton
+        android:id="@+id/btn_thanks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="55dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/btn_action_second_default" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btn_thanks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="Thanks"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:id="@+id/tv_weather_today"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/tv_date_today"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        tools:text="12:34" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_date_today"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutChild0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/tv_hour_0"
+                android:gravity="center"
+                tools:text="12:34"
+                tools:textScaleX="0.5"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/iv_0"
+                android:src="@drawable/icon_w_cd"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/tv_temp_0"
+                android:gravity="center"
+                tools:text="12:34"
+                tools:textScaleX="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutChild1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/tv_hour_1"
+                android:gravity="center"
+                tools:text="12:34"
+                tools:textScaleX="0.5"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/iv_1"
+                android:src="@drawable/icon_w_cd"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/tv_temp_1"
+                android:gravity="center"
+                tools:text="12:34"
+                tools:textScaleX="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutChild2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/tv_hour_2"
+                android:gravity="center"
+                tools:text="12:34"
+                tools:textScaleX="0.5"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/iv_2"
+                android:src="@drawable/icon_w_cd"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/tv_temp_2"
+                android:gravity="center"
+                tools:text="12:34"
+                tools:textScaleX="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutChild3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/tv_hour_3"
+                android:gravity="center"
+                tools:text="12:34"
+                tools:textScaleX="0.5"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/iv_3"
+                android:src="@drawable/icon_w_cd"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/tv_temp_3"
+                android:gravity="center"
+                tools:text="12:34"
+                tools:textScaleX="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutChild4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/tv_hour_4"
+                android:gravity="center"
+                tools:text="12:34"
+                tools:textScaleX="0.5"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/iv_4"
+                android:src="@drawable/icon_w_cd"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/tv_temp_4"
+                android:gravity="center"
+                tools:text="12:34"
+                tools:textScaleX="0.5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="weatherwake_blue">#1b86e0</color>
+    <color name="primary_dark">#1878c9</color>
+    <color name="accent">#ffae00</color>
+
+    <color name="text_white">#ffffff</color>
+    <color name="text_blue">#3191e3</color>
+    <color name="text_grey">#b6b6b6</color>
+
+</resources>
